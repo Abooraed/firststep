@@ -56,13 +56,12 @@ def insert():
             input('LIEU', name='lieu'),
             input('DATE', name='date', type=DATE),
             input('NATURE', name='nature'),
-            input('NATURE', name='nature'),
-            input('NATURE', name='nature'),
+            input('Fichier', name='file_data')
         ]
     )
-    
+
     put_buttons(['Afficher les détails'], onclick=[show_details_page])
-    
+
     conn = connect_to_mysql()
     insert_data(conn, data['id'], data['equipe'], data['lieu'], data['date'], data['nature'], data['file_data'])
     put_text("Données insérées avec succès dans la base de données.")
