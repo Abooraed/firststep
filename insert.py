@@ -56,7 +56,8 @@ def insert():
             input('LIEU', name='lieu'),
             input('DATE', name='date', type=DATE),
             input('NATURE', name='nature'),
-            input('Fichier', name='file_data')
+            input('NATURE', name='nature'),
+            input('NATURE', name='nature'),
         ]
     )
     
